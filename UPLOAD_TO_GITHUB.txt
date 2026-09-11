@@ -1,0 +1,2 @@
+UPLOAD EVERYTHING IN THIS FOLDER TO THE ROOT OF YOUR GITHUB REPOSITORY.
+Then open Actions -> Build MayaAssistant APK -> Run workflow.

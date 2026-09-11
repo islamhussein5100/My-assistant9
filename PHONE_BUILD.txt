@@ -1,0 +1,9 @@
+Maya Assistant — Phone/Wevlo Build
+
+This version uses Groovy Gradle files (build.gradle/settings.gradle) instead of Kotlin DSL (.kts).
+This improves compatibility with phone/cloud builders that inject signingConfigs or other Gradle snippets.
+
+Build task: assembleDebug
+APK: app/build/outputs/apk/debug/app-debug.apk
+
+If the builder asks for signing, choose its default/debug signing option.

@@ -1,0 +1,46 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.example.mayaassistant'
+    compileSdk 35
+
+    // Named release config so cloud builders can safely attach their signing key.
+    signingConfigs {
+        release { }
+    }
+
+    defaultConfig {
+        applicationId 'com.example.mayaassistant'
+        minSdk 26
+        targetSdk 35
+        versionCode 3
+        versionName '2.1-phone'
+    }
+
+    buildTypes {
+        release {
+            // Wevlo supplies the actual signing key during its Sign step.
+            // If no key is supplied, Gradle can still configure the variant.
+            signingConfig signingConfigs.release
+            minifyEnabled false
+        }
+        debug {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+}
+
+dependencies {
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:padding="24dp"
+        android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:text="Maya Assistant" android:textSize="30sp" android:textStyle="bold"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/statusText" android:text="মায়া প্রস্তুত" android:textSize="18sp"
+            android:layout_marginTop="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/heardText" android:text="তুমি: —" android:textSize="17sp"
+            android:layout_marginTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <ImageButton android:id="@+id/micButton" android:src="@drawable/ic_mic" android:contentDescription="মাইক"
+            android:layout_width="100dp" android:layout_height="100dp" android:layout_marginTop="22dp" />
+        <Button android:id="@+id/wakeButton" android:text="Hey Maya — Screen Off চালু"
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" />
+        <Button android:id="@+id/stopWakeButton" android:text="Screen Off Mode বন্ধ"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <Button android:id="@+id/defaultAssistantButton" android:text="Maya-কে Default Assistant করুন"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <TextView android:text="নোট: Screen-off listener চালু করলে notification থাকবে। ফোনের battery saver/OEM policy এটি বন্ধ করে দিতে পারে।"
+            android:textSize="14sp" android:layout_marginTop="18dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>
